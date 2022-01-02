@@ -4,14 +4,29 @@
 
 // Your function will be tested with pre-made examples as well as random ones.
 
+//Do Dirfference of Volumes of Cuboids problem
+// take 2 arrays and find the difference of cuboids volumes regards of which is bigger
+//times the nums in of each array then substractthe diffrenece 
+
+
+//PREP
+//2 arrays (a , b)
+//P: num, whole, +, num > 0
+//R: return value
+//E: 
 
 function findDifference(a, b) {
-    //loading...
-  }
+  //use reduce to add up the arrays 
+  //times the totals with each arrays, regardless of which is bigger so has to be Math.abs()
+  //return the result
+  let totalA = a.reduce((asc, c) => asc * c, );
+  let totalB = b.reduce((asc, c) => asc * c, 0);
+   
+  return Math.abs(totalA - totalB)
+}
 
+findDifference([3,2,5],[1,4,4]) //14
+findDifference([1,2,3],[2,3,2])//6
+findDifference([11,2,5],[1,10,8])//30
 
-
-
-  
-
-  // If you can, try writing it in one line of code.
+let findDifference = (a, b) => Math.abs(a.reduce((asc, c) => asc * c, ) -  b.reduce((asc, c) => asc * c, ))
