@@ -10,4 +10,30 @@
 
 function howMuchWater(water, load, clothes){
     // Insert your brilliant code here
+    //need to times water with 1.1
+    //substract clothes and water
+    //wrtie up a if/else statment
+    //round to nearest 2 decimal place
+    let amount = clothes - load
+    let nex = Math.pow(1.1, amount)
+    if(clothes > load * 2){
+        return 'Too much clothes'
+    }else if(clothes < load){
+        return 'Not enough clothes'
+    }else{
+        return +(water * nex).toFixed(2)
+    }
   }
+
+  function howMuchWater(L,X,N){
+    if (N > 2 * X) return "Too much clothes";
+    if (N < X) return "Not enough clothes";
+    return +(L * 1.1 ** (N - X)).toFixed(2);
+  }
+
+  //num. +, 2 decimal places
+  //return string, either clothesx2 > load ('Too much clothes') or clothes < load 'Not enough clothes', round to nearest 2 decimal place
+
+  howMuchWater(10,11,20) // 20, then you need 10 * 1.1 ^ (20 - 11)
+  howMuchWater(10,10,2) // 'Not enough clothes'
+  howMuchWater(50,15,29) // 189.87
