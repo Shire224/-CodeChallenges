@@ -23,7 +23,46 @@
 // Also, check out the new Pirates!! Kata: https://www.codewars.com/kata/57e2d5f473aa6a476b0000fe
 
 const cannonsReady = (gunners) => {
-    //your solution here
-  }
+    for (var i in gunners) {
+        if (gunners[i] == "nay") {
+          return "Shiver me timbers!"
+        }
+    }
+  return "Fire!"
+}
 
-  
+//Should have used polymohisim to loop thru all the gunners
+//Then check for each index if it says 'nay', if one does then it returns shiver me timbers
+//if not then we fire
+
+
+// const cannonsReady = (gunners) => {
+//     //filter for only aye
+//     for(let i = 1; i < gunners.length; i++){
+//         if( gunners[i] == 'aye'){
+//             return 'Fire'
+//         }else{
+//             return 'Shiver me timbers!'
+//         }
+//     }
+    
+//   }
+
+  //checking to see if gunners are loaded and ready, all has to say 'aye'
+
+  //2,3,4 nums, +, floats
+  //return ayy or nay
+
+//   const cannonsReady = (gunners) => {
+//     let arr = {}
+//     let ready = {'Mike': 'aye', 'Joe':'aye'}
+//     let notReady = {'Mike': 'aye', 'Joe':'nah'}
+
+//     for(let i = 0; i < gunners.length; i++){
+//         if(gunners[i] == ready){
+//            return 'fire'
+//         }else{
+//             return 'Shiver me timbers!'
+//         }
+//     }
+//   }
