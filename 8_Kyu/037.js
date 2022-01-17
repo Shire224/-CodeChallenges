@@ -6,8 +6,48 @@
 
 // Note: Use "" instead of '' in C++.
 
+// function updateLight(current) {
+//     //could use if/else but lets try polmorphism loop
+//     for(let i in current){
+//         if(current[i] == current[i] + 1){
+//             return current[i]
+//         }
+//     }
+//  }
+
+ 
 function updateLight(current) {
+    switch(current){
+        case 'green':
+        return 'yellow'
+        break;
+        case'yellow':
+        return 'red'
+        break;
+        case'red':
+        return'green'
+        break;
+    }
+  }
+
+  const updateLight = current => ({
+    green: 'yellow',
+    yellow: 'red',
+    red: 'green',
+  })[current]
+
+
+  //so green -> yellow -> red -> green
+
+  //Put in string
+  //return next string
+  //
+  updateLight('green') //yellow
+  updateLight('yellow')//red
+  updateLight('red')//green
+
+  function updateLight(current) {
   
-    //your code here!
+    return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
   
   }
