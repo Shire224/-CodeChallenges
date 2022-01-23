@@ -7,5 +7,27 @@
 // In this kata, the toFreud() function will take a string as its argument, and return a string with every word replaced by the explanation to everything, according to Freud. Note that an empty string, or no arguments, should result in the ouput being ""(empty string).
 
 function toFreud(string) {
-    return result;
+    //loop thru
+    //replace each string with sex
+    //return a string of all new words
+    return !string ? "" : string.split(" ").map((word) => "sex").join(" ")
     }
+
+    // function toFreud(string) {
+    //     if(string === ""){
+    //       return string;
+    //     }
+    //     string = string.split(' ');
+    //     for(var i = 0; i < string.length; i++){
+    //       string[i] = 'sex';
+    //     }
+    //     string = string.join(' ');
+    //     return string;
+    //   }
+
+    //enter a string
+    //return will be 'sex"
+
+    toFreud('the world is big') // 'sex sex sex sex"
+
+    const toFreud = str => str === '' ? '' : str.split(' ').map(e => 'sex').join(' ')
