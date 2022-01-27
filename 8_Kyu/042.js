@@ -3,5 +3,5 @@
 // [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 
 function grow(x){
-
+    const grow=x=> x.reduce((a,b) => a*b);
 }
