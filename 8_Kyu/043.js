@@ -13,7 +13,7 @@
 // Happy coding!
 
 function mergeArrays(arr1, arr2) {
-    let arr = arr1.concat(arr2).sort((a, b) => a - b); //concat(add) both arrays together, then sort from desc
+    let arr = arr1.concat(arr2).sort((a, b) => a - b); //concat(add) both arrays together, then sort from asc
     let result = []; //empty array
     for (let i = 0; i < arr.length; i++) { //loop thru new array that has both arr1 and arr2
       if (arr[i] !== arr[i + 1]) { //if first index is the same as the next index beside it
