@@ -20,7 +20,7 @@
 //         }else if(str == str.toUpperCase()){
 //           newStr.push(str[i.toLowerCase])
 //         }
-//       return newStr
+//       return newStrgit 
 //     }
 //   }
 
