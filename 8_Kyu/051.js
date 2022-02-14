@@ -26,3 +26,5 @@ var summation = function (num) {
 //   var summation = function (num) {
 //     return Array(num).fill(0).reduce((acc, _, index) => acc + index + 1, 0)
 // }
+
+const summation = n => n * (n + 1) / 2;
