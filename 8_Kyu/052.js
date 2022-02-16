@@ -7,5 +7,17 @@
 // 4) n =  12, x = 7, y = 5 => false because  12 is neither divisible by 7 nor 5
 
 function isDivisible(n, x, y) {
-  
-}
+    if(n % x === 0 && n % y === 0){ //check to see n is divisble by x and y
+      return true
+    }else{
+      return false
+    }
+  }
+
+  function isDivisible(n, x, y) {
+    return n % x === 0 && n % y === 0
+  }
+
+  function isDivisible(n, x, y) {
+    return !(n%x||n%y)
+  }
