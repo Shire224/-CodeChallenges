@@ -11,5 +11,33 @@
 
 function basicOp(operation, value1, value2)
 {
-  // Code
+  //could use if/else and switch cases
+  //easier to put operations into objects
+    if(operation == '+'){
+        return value1 + value2
+    }else if(operation == '-'){
+        return value1 - value2
+    }else if(operation == '*'){
+        return value1 * value2
+    }else if(operation == '/'){
+        return value1 / value2
+    }
 }
+
+//put in +,-,*,/ , then put to numbers, +, floats
+//return the value of the two nums depending on the operator
+
+// function basicOp(operation, value1, value2) {
+//     switch (operation) {
+//         case '+':
+//             return value1 + value2;
+//         case '-':
+//             return value1 - value2;
+//         case '*':
+//             return value1 * value2;
+//         case '/':
+//             return value1 / value2;
+//         default:
+//             return 0;
+//     }
+// }
