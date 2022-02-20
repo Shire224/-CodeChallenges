@@ -13,5 +13,7 @@
 // time = 11.8--> litres = 5
 
 function litres(time) {
-    return 0;
+    return Math.floor(time * 0.5)
   }
+//0.5 liters per 1 hr, put in nums, floats or int
+//return the number of liters
