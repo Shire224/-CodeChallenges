@@ -6,5 +6,20 @@
 // You can assume that all values are integers. Do not mutate the input array/list.
 
 function invert(array) {
-    return ;
+    let arr = []
+    for(let i = 0; i < array.length, i++){
+        arr.push(-array[i]);
+    }
+    return arr
+ }
+
+ //return positive to negative and vice verse
+ //loop thru array a
+
+ function invert(array) {
+    return array.map((num) => num * -1)  
+ }
+
+ function invert(array) {
+    return array.map( x => x === 0 ? x : -x);
  }
