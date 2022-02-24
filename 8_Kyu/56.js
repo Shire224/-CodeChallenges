@@ -10,7 +10,7 @@
 // albert.toString() --> "Hi! my name's Boris" <-- ohoh..
 
 function Warrior(n){
-    name = n;  
+    let name = n;  
     this.name = function(n){
       if( n ) name=n;
       return name;
