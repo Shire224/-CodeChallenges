@@ -10,7 +10,21 @@
 // countBy(2,5) === [2,4,6,8,10]
 
 function countBy(x, n) {
-    let z = [];
-  
-    return z;
+    //loop thru array
+    //length is n
+    //double every time
+    //push i to new array
+    let arr = []
+    for(let i = 1; i <= n; i++){
+        let y = x * i
+        arr.push(y)
+    }
+    return arr
   }
+
+  //create a array 
+  //x and n are nums, floats, +
+  //return an array of the first n multiples of x
+  //examples
+countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
+countBy(2,5) === [2,4,6,8,10]
