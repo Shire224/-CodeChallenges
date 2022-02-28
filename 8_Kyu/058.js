@@ -9,11 +9,24 @@
 // You may consider that there will not be any empty arrays/vectors.
 
 var min = function(list){
-    
+    return Math.min(...list)
+  }
+  
+  var max = function(list){
+      
+      return Math.max(...list);
+  }
+
+//given an array find the max/min num
+//array of numbers
+//return biggest and retrun smallest
+
+var min = function(list){
+    list.sort((a, b) => (a - b));
     return list[0];
 }
 
 var max = function(list){
-    
+    list.sort((a, b) => (b - a));
     return list[0];
 }
