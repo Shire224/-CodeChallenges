@@ -15,11 +15,11 @@
 
 function points(games) {
     let total = 0;
-    games.map(game => {
-      if (game[0] === game[2]) {
-        total += 1;
-      } else if (game[0] > game[2]) {
-        total += 3;
+    games.map(game => { //use map to go thru the array of objects one by one
+      if (game[0] === game[2]) { //if x the same as y (index 0 same as index 3, ex 3:3)
+        total += 1; //add one to the total variable
+      } else if (game[0] > game[2]) { //if x > y
+        total += 3; //add 3 to the count
       }
     });
     return total;
