@@ -13,15 +13,19 @@ function lovefunc(flower1, flower2){
   lovefunc(3,3) //false
   lovefunc(10,7) //true
 
-//   return flower1 % 2 && flower2 % 2 !== 0 ? true : flower1 % 2 !==0 && flower2 % 2 
+// function lovefunc(flower1, flower2){
+//   return (flower1 + flower2) % 2 == 1;
+// }
 
-//   function lovefunc(flower1, flower2){
-//     // use a ternary statment
-//     if(flower1 % 2 === 0 && flower2 % 2 !== 0){
-//       return true
-//     }else if(flower1 % 2 !== 0 && flower2 % 2 === 0){
-//       return true
-//     }else{
-//       false
+// function lovefunc(flower1, flower2){
+//     // moment of truth
+//     if(flower1 % 2 === 0 && flower2 % 2 === 0){
+//       return false;
+//     } else if(flower1 % 2 === 1 && flower2 % 2 === 1){
+//       return false;
+//     }else if(flower1 % 2 === 1 && flower2 % 2 === 0){
+//       return true;
+//     }else if(flower1 % 2 === 0 && flower2 % 2 === 1){
+//       return true;
 //     }
 //   }
