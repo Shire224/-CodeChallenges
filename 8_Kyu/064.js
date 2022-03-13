@@ -8,6 +8,11 @@
 function pillars(num_pill, dist, width) {
     return num_pill == 1  ? 0 : ((num_pill-2)*width) + ((100*dist)*(num_pill-1)) 
   }
+  //   I just used a ternary conditional that checked if the number of pilars is 1, it'll return 0, else, It'll multiply the number of pilars minus 2, by the width, so I can get the length of all the pilars except for the first and the last one, and then I'll sum the distance by 100 so I can get it in centimeters and the result of this by the number of pilars minus one, because to get the sum of the lengths between two pillars I have to rest one, beacuse they are ordered like this:
+
+// | -- | -- | -- |
+
+// So if there are 4 pillars, there are only 3 empty spaces that contain a length
 
   //nums,+,floats, pillars greater or equal then one, distance 10-30meters, width 10-50 cm
   //return distance between first and last pillar in cm=n
@@ -24,3 +29,4 @@ function pillars(num_pill, dist, width) {
     
     return distAll + widthAllPillars;
   }
+
