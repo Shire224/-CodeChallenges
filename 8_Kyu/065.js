@@ -20,6 +20,17 @@
 // * 'L', [1, 4, 5, 3, 5 ]  ->  [5, 5, 4, 3, 1]
 
 const flip=(d, a)=>{
-    //TODO
-    return 
+    //use sort or use if/else
+    if(d === 'R'){
+      return a.sort((a,b) => a-b)
+    }else if(d === 'L'){
+      return a.sort((a,b) => b-a)
+    }
+  }
+
+  //retrun greatest to smallest when L
+  //return smallest when R
+
+  const flip=(d, a)=>{
+    return d === 'R' ? a.sort((a,b) => a-b) : d === 'L' ? a.sort((a,b) => b-a) : 0
   }
