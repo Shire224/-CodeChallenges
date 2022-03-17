@@ -14,5 +14,16 @@
 // Inputs and the expected output will never exceed the signed 32-bit integer limit (2^31 - 1)
 
 function sumStr(a,b) {
-  
-}
+    return Number(a)+Number(b)+'';
+  }
+
+//Put numbers but it was to be strings
+//return the sum of those 2 strings as a string
+//E
+sumStr('5','5') //'10'
+sumStr('3','6') //'9'
+sumStr('1','2') // '3'
+
+function sumStr(a,b) {
+    return (+a+ +b)+''  
+  }
