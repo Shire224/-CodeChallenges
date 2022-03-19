@@ -5,5 +5,10 @@
 // "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 
 function reverseWords(str){
-    return str; // reverse those words
+    return str.split(' ').reverse().join(' ')
   }
+  
+
+  //put strings, any length
+  // return string in reverse order'
+  reverseWords('hello world') // world hello
