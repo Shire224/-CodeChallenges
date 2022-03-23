@@ -6,5 +6,20 @@
 // n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 
 function powersOfTwo(n){
-    return []
+    let arr = []
+    for(let i = 0; i <= n; i++){
+        arr.push(2 ** i)
+    }
+    return arr
   }
+
+  //put a num, +, float
+  //return a list off all the powers of 2
+
+//   function powersOfTwo(n){
+//     var result = [];
+//     for (var i = 0; i <= n; i++) {
+//       result.push(Math.pow(2, i));
+//     }
+//     return result;
+//   }
