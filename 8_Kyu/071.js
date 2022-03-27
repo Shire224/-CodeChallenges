@@ -11,5 +11,13 @@
 // sumMul(4, -7)  ==> "INVALID"
 
 function sumMul(n,m){
-    //your idea here
+    if (n >= m) return "INVALID";
+  
+  var sum = 0;
+    for (var i = n; i < m; i+=n) {
+      sum += i;
     }
+    return sum;
+  }
+
+//   const sumMul = (n, m) => ~~(m/n) * (m+n - m%n) / 2 || 'INVALID';
