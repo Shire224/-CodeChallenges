@@ -11,13 +11,13 @@
 // sumMul(4, -7)  ==> "INVALID"
 
 function sumMul(n,m){
-    if (n >= m) return "INVALID";
+    if (n >= m) return "INVALID"; // if n is equal or greater then m thn its invalif, we don't multiply more than m
   
-  var sum = 0;
-    for (var i = n; i < m; i+=n) {
-      sum += i;
+  var sum = 0; //store total in a varible
+    for (var i = n; i < m; i+=n) { //assin i to n, loop till i is greater then m, i+=n means add n to each loop 
+      sum += i; //add i to the total um
     }
-    return sum;
+    return sum; //return it
   }
 
 //   const sumMul = (n, m) => ~~(m/n) * (m+n - m%n) / 2 || 'INVALID';
