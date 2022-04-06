@@ -6,6 +6,17 @@
 // * "1234!_ "     -> "11223344!!__  "
 
 function doubleChar(str) {
-    // Your code here
+    let arr = []
+
+    for(let i = 0; i < str.length; i++){
+      arr.push(str[i] + str[i])
+    }
+    return arr.join('')
   }
-  
+
+  //enter string
+  //repeat case letters twice
+  //e:
+  doubleChar('String') //SSttrriinngg
+
+  const doubleChar = (str) => str.split("").map(c => c + c).join("");
