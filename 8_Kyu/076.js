@@ -15,5 +15,14 @@
 // 0 <= s <= 59
 
 function past(h, m, s){
-    //#Happy Coding! ^_^
+    let milisiconds = (h * 3600000) + (m * 60000) + (s * 1000)
+    return milisiconds
   }
+
+  //return milliseconds
+  //parameteres are hours, minutes and seconds, h <= 23, m <=59, s <= 59, 1 m is 6000, 1 s is 1000, 1 h is 3600000
+  //return in milisiconds 
+
+//   function past(h, m, s){
+//     return ((h*3600)+(m*60)+s)*1000;
+//   }
