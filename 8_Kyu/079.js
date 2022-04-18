@@ -9,5 +9,18 @@
 // if bmi > 30 return "Obese"
 
 function bmi(weight, height) {
-    return "";
+    let num = weight / height**2   //Math.pow(hight,2)
+    if(num <= 18.5){
+        return 'Underweight'
+    }else if(num <= 25.0){
+        return "Normal"
+    }else if(num <= 30.0){
+        return "Overweight"
+    }else if(num > 30){
+        return 'Obese'
+    }
   }
+
+  //put in numbers, float or int, must be positive
+  //return bmi, wight/ height ^2. return as a string 
+  
