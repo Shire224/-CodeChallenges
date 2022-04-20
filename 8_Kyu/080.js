@@ -6,5 +6,20 @@
 
 function getAverage(marks){
     //TODO : calculate the downward rounded average of the marks array
+    //add all the numbers togther then divide by mark.lengh
+    let total = marks.reduce((asc, c) => asc + c, 0)
+		return Math.floor(total / marks.length)  
   }
-  
+
+
+
+  //array of marks, all nums, positives, floats
+  //return the average 
+  //e:
+  getAverage([2,2,2,2,2,2,2]) //2
+  getAverage([1,2,3,4,5]) //3
+  getAverage([1,1,1,1,1,1,1,1]) //1
+
+  function getAverage(marks){
+    return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
+  }
