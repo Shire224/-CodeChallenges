@@ -8,5 +8,9 @@
 //  1 --> [1]
 
 function monkeyCount(n) {
-    // your code here
+    let total = []
+    for(let i = 1; i <= n; i++){
+      total.push(i)
     }
+    return total
+  }
