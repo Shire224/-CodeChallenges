@@ -19,3 +19,17 @@
 // The pontoon, you, and the shark are all aligned in one dimension.
 
 // If you make it, return "Alive!", if not, return "Shark Bait!".
+aliveorSharkBait = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) => {
+    if(dolphin){
+        sharkSpeed /= 2
+    }
+    if ( (pontoonDistance / youSpeed) < (sharkDistance / sharkSpeed) ){
+        console.log("Alive")
+    }else{
+        console.log("Shark Bait!")
+    }
+}
+aliveorSharkBait(5,20,20,2,false)
+aliveorSharkBait(5,20,2,20,true)
+aliveorSharkBait(5,20,20,2,true)
+aliveorSharkBait(120,200,6,20,true)
