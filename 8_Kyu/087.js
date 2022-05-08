@@ -15,3 +15,7 @@ function find_average(array) {
   //return the average
   //e:
   find_average([2,2,2,2,2,2]) //2
+
+  function find_average(array) {
+    return array.length >= 1 ? array.reduce((asc, c) => asc + c , 0) / array.length : 0
+}
