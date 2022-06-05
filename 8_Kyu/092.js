@@ -7,31 +7,32 @@
 // Example
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 
-function countPositivesSumNegatives(input) {
-    let positive = []
-    let negative = []
-    for( let i = 0; l < input.length;i<l i++){
-      if(input[i] > 0){
-        positive.push(input[i])
-      }else if(input[i] < 0){
-        negative.push(input[i])
-      }
-    }
-    let positiveCount = []
-    if(positive != null && positive.length < 1){
-     positiveCount = 0
-    }else{
-      positiveCount += positive.length
-    }
+// function countPositivesSumNegatives(input) {
+//     let positive = []
+//     let negative = []
+//     //for( let i = 0; l < input.length;i<l i++){
+//       if(input[i] > 0){
+//         positive.push(input[i])
+//       }else if(input[i] < 0){
+//         negative.push(input[i])
+//       }
+//     }
+//     let positiveCount = []
+//     if(positive != null && positive.length < 1){
+//      positiveCount = 0
+//     }else{
+//       positiveCount += positive.length
+//     }
   
-    let totalNegative = negative.reduce((asc,c) => asc + c, 0)
+//     let totalNegative = negative.reduce((asc,c) => asc + c, 0)
     
-    if(positive.length < 1 && totalNegative === 0){
-      return []
-    }else{
-    return [Number(positiveCount),totalNegative]
-    }
-  }
+//     if(positive.length < 1 && totalNegative === 0){
+//       return []
+//     }else{
+//     return [Number(positiveCount),totalNegative]
+//     }
+//   }
+
 
 //array of int, some are negative and some are positive
 //return an arr that total sum of all positive and negative ex. [positive total, negative total]
