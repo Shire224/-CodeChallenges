@@ -28,7 +28,11 @@
 //       return s.split(0,s.length) + i
 //     }
 //   }
+<<<<<<< HEAD
 //}
+=======
+}
+>>>>>>> 75b2937eb0f6933fa2360db73328c940fba04260
 
 // function getMiddle(s)
 // {
@@ -39,6 +43,7 @@ function getMiddle(s)
 {
   return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
 }
+<<<<<<< HEAD
 //substr() returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards
 //Math.ceil() function always rounds a number up to the next largest integer
 //get the length of the string then divide it by 2, then substract it by 1. Will round up
@@ -51,12 +56,25 @@ function getMiddle(s) {
   return (s.length % 2) //check if length is even
     ? s.charAt(Math.floor(middle)) //if even return a new string consisting of avrg down middle length
     : s.slice(middle - 1, middle + 1);//if odd use slice method. middle length - 1 and middle length + 1
+=======
+
+
+function getMiddle(s) {
+  var middle = s.length / 2;
+  return (s.length % 2) 
+    ? s.charAt(Math.floor(middle))
+    : s.slice(middle - 1, middle + 1);
+>>>>>>> 75b2937eb0f6933fa2360db73328c940fba04260
 }
 
 
 function getMiddle(s)
 {
+<<<<<<< HEAD
   return s.slice((s.length-1)/2, s.length/2+1); 
+=======
+  return s.slice((s.length-1)/2, s.length/2+1);
+>>>>>>> 75b2937eb0f6933fa2360db73328c940fba04260
 }
 
 //string, one word
