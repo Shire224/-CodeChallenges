@@ -26,10 +26,10 @@ function printerError(s) {
 
 //Examples:
 s = "aaabbbbhaijjjm"
-error_printer(s) => "0/14"
+//error_printer(s) => "0/14"
 
 s = "aaaxbbbbyyhwawiwjjjwwm"
-error_printer(s) => "8/22"
+//error_printer(s) => "8/22"
 
 function printerError(s) {
     // your code
