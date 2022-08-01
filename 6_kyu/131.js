@@ -45,7 +45,7 @@ if one is smaller the push it
 */
 
 function findOutlier(int){
-    var even = int.filter(a=>a%2==0);
-    var odd = int.filter(a=>a%2!==0);
-    return even.length==1? even[0] : odd[0];
+    var even = int.filter(a=>a%2==0); //check to see if numbers is even
+    var odd = int.filter(a=>a%2!==0); //check to see if numbers is odd
+    return even.length==1? even[0] : odd[0]; //If only one number in even array then true, if not then one number is in the off array
   }
