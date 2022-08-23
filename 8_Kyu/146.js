@@ -12,7 +12,7 @@ text before = "abc"
 character   = "z"
 text after  = "zzz"*/
 
-//Paramount: Two elements, both are strings. Can have anything in string such as symbols and numbers
+//Parametes: Two elements, both are strings. Can have anything in string such as symbols and numbers
 //Return: char amount of times as text.length
 //Eample: 
 
