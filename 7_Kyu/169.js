@@ -11,6 +11,6 @@
 // "pqksuvy"                     -- => "kpqsuvy"
 // "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrs
 
-function sortGiftCode(code){
-    //TODO 
+function sortGiftCode(code) {
+    return code.split("").sort().join("");
   }
