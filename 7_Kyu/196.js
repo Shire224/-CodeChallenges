@@ -9,11 +9,18 @@
 // The input array's length > 1
 
 
-function averageLength() { 
-    
-  }
+function averageLength(arr) { 
+  const avgLength = Math.round(arr.join('').length/arr.length)
+  return arr.map(str => str[0].repeat(avgLength))
+}
 
   /*
 get the length for each element and divide it by the length of the array
 use Math.round() to round it so its an integer
   */
+
+// function averageLength(arr){
+//   let num = Math.round(arr.reduce((acc, cv) => acc + cv.length, 0) / arr.length )
+
+//   return arr.map(element => element[0].repeat(num))
+// }
