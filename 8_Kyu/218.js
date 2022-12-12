@@ -12,3 +12,4 @@ function checkAlive (health) {
       return false
     }
   }
+  
